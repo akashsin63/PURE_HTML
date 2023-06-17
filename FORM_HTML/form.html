@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Hotel Booking Form </title>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Personal Details : </legend>
+            <lable for="name">Username:</lable><input type="text" name="username" id="name" required autofocus placeholder="Your name" pattern="[a-zA-Z]{3,}" title="Please enter the name in more than three letters">
+            <lable for="email">Email:</lable><input type="text" name="email" id="email" required autofocus placeholder="Email" patter="[a-zA-Z]@{3,}[a-zA-Z].{1}[a-zA-Z]{3,}" title="Please provide your valid Email address">
+            <p> </p><lable for="phoneNo">Phone:</lable><input type="tel" name="phoneNo" id="phoneNo" required autofocus placeholder=" Phone Number" pattern="[0-9]{3,} [0-9]{4,} [0-9]{4,}" title="Please enter your valid phone number">
+            <lable for="country">Country</lable><select name="country" id="country" required>
+                <option value=" ">Select country</option>
+                <option value="IND">INDIA</option>
+                <option value="US">U.S.A</option>
+                <option value="CND">CANADA</opton>
+                <option value="RUS">RUSSIA</option>
+            </select>
+        </fieldset>
+<!-- know as field set is group our one group of feild is over -->
+       <fieldset>
+        <legend>Reservation Details</legend>
+        <lable for="F_name">First Name:</lable><input type="text" name="FirstName" id="F_NAME" required autofocus placeholder="First Name" title="Enter your First Name" pattern="[A-Z]{1,} [a-z]{5,}">
+        <lable for="L_name">Last Name:</lable><input type="text" name="lastName" id="L_NAME" required autofocus placeholder="Last Name" title="Enter your Last Name" pattern="[A-Z]{1,} [a-z]{5,}">
+        <br>
+        <p> </p>
+        <label for="Fromdate">Check-In-Date:</label><input type="date" name="Fromdate" id="FromDate" min="28-Aug-2022">
+        <label for="Lastdate">Check-Out-date:</label><input type="date" name="date" id="ToDate">
+        <p> </p><label for="guests">Number Of Guests:</label><input type="number" name="numberOfGuests" id="guests" min="1" max="6">
+        <p>Do you require meals ?</p>
+        <lable for="yes">Yes</lable><input type="radio" name="meals" id="yes" value="yesMeals">
+        <lable for="no">No</lable><input type="radio" name="meals" id="no" value="noMeals">
+<!--while using radio buttons you need 2 radio inout with same name attribute-->
+        <br>
+        <p>Do you want balcony room as city looks wonderfull from height .. :)</p>
+        <input type="checkbox" name="balcony" value="yes" checked title="Yes if it is ticked">
+        <br>
+        <input type="image" src="/submit-button.jpg">
+       </fieldset>        
+
+    </form>
+    
+</body>
+</html>
